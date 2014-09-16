@@ -1,5 +1,6 @@
 angular.module("BookApp", [
   "BookRouter",
-  "BookCtrls"
+  "BookCtrls",
+  "BookFactories"
 ])
 

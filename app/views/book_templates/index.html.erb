@@ -1,1 +1,8 @@
 {{ books.greeting }}
+
+{{ books.sayHello() }}
+
+<form ng-submit="books.addBook(newBook)">
+  <input type="text" ng-model="newBook.title">
+  <button> Save </button>
+</form>
