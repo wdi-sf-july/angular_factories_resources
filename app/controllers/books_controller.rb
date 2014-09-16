@@ -6,6 +6,10 @@ class BooksController < ApplicationController
     render json: @books
   end
 
+  def create
+    render json: Book.create(params.require(:book).permit(:title))
+  end
+
   private
     def render_layout_if_html
       if request.format.symbol == :html
